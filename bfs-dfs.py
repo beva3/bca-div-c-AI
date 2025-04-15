@@ -10,6 +10,18 @@ def bfs(graph, start):
     
     return visited
 
+def dfs(graph, start):
+    visited = []         # Liste des nœuds visités
+    stack = [start]      # File pour explorer
+   
+    while stack:
+        vertex = stack.pop(-1)  # Pop last element for DFS
+        if vertex not in visited:
+            visited.append(vertex)
+            stack.extend(graph[vertex])
+    
+    return visited
+
 # in dfs : just chenge queue to stack, and pop last element like vertex = queue.pop(-1)
 
 graph = {
@@ -26,3 +38,7 @@ i = list(graph.keys())
 for key in i:
     print(f"DFS starting from {key}: {bfs(graph, key)}")
     
+    
+print()
+for key in i:
+    print(f"DFS starting from {key}: {dfs(graph, key)}")
