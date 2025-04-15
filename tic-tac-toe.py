@@ -28,6 +28,9 @@ class TicTacToe:
             return False
         return True
     
+    def check_draw(self):
+        return ' ' not in self.board
+    
                 
     
     def play(self):
@@ -38,6 +41,11 @@ class TicTacToe:
                 
                 if not self.make_position(position):
                     continue
+                
+                if self.check_draw():
+                    self.print_board()
+                    print("It's a draw!")
+                    break
             
             except ValueError:
                 print("Invalid input. Please enter a number between 1 and 9.")
