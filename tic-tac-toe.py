@@ -20,6 +20,14 @@ class TicTacToe:
         self.current_player = 'O' if self.current_player == 'X' else 'X'
         
     
+    def make_position(self, position):
+        if self.board[position] == ' ':
+            self.board[position] = self.current_player
+        else:
+            print("Position already taken. Try again.")
+            return False
+        return True
+    
                 
     
     def play(self):
@@ -27,7 +35,10 @@ class TicTacToe:
             self.print_board()
             try :
                 position = int(input(f"Player {self.current_player}, enter your move (1-9): ")) - 1
-
+                
+                if not self.make_position(position):
+                    continue
+            
             except ValueError:
                 print("Invalid input. Please enter a number between 1 and 9.")
                 continue
