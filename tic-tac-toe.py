@@ -31,6 +31,17 @@ class TicTacToe:
     def check_draw(self):
         return ' ' not in self.board
     
+    def check_winner(self):
+        winning_combinations = [
+            (0, 1, 2), (3, 4, 5), (6, 7, 8), # rows
+            (0, 3, 6), (1, 4, 7), (2, 5, 8), # columns
+            (0, 4, 8), (2, 4, 6)             # diagonals
+        ]
+        
+        for combo in winning_combinations:
+            if self.board[combo[0]] == self.board[combo[1]] == self.board[combo[2]] != ' ':
+                return True
+        return False
                 
     
     def play(self):
@@ -46,7 +57,12 @@ class TicTacToe:
                     self.print_board()
                     print("It's a draw!")
                     break
-            
+                
+                if self.check_winner():
+                    self.print_board()
+                    print(f"Player {self.current_player} wins!")
+                    break
+                
             except ValueError:
                 print("Invalid input. Please enter a number between 1 and 9.")
                 continue
