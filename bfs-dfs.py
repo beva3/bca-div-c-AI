@@ -1,26 +1,16 @@
-def dfs(graph, start):
-    visited = []         # Liste des nœuds visités
-    stack = [start]      # Pile pour explorer
-
-    while stack:
-        node = stack.pop()
-        if node not in visited:
-            visited.append(node)
-            stack.extend(reversed(graph[node]))  # On ajoute les voisins (dans l’ordre)
-
-    return visited
-
 def bfs(graph, start):
     visited = []         # Liste des nœuds visités
     queue = [start]      # File pour explorer
-
+   
     while queue:
-        node = queue.pop(0)
-        if node not in visited:
-            visited.append(node)
-            queue.extend(graph[node])  # Ajoute les voisins
-
+        vertex = queue.pop(0)
+        if vertex not in visited:
+            visited.append(vertex)
+            queue.extend(graph[vertex])
+    
     return visited
+
+# in dfs : just chenge queue to stack, and pop last element like vertex = queue.pop(-1)
 
 graph = {
     'A': ['B', 'C'],
@@ -36,5 +26,3 @@ i = list(graph.keys())
 for key in i:
     print(f"DFS starting from {key}: {bfs(graph, key)}")
     
-for key in i:
-    print(f"DFS starting from {key}: {dfs(graph, key)}")
