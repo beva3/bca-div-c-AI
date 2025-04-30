@@ -1,0 +1,50 @@
+CREATE OR REPLACE FUNCTION FACTORIAL(N IN NUMBER)
+RETURN NUMBER
+IS
+BEGIN
+    IF N = 0 OR N = 1 THEN
+        RETURN 1;
+    ELSIF N > 1 THEN
+        RETURN N * FACTORIAL(N - 1);
+    ELSE
+        RETURN NULL;  -- For negative inputs (optional)
+    END IF;
+    
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('An error occurred: ' || SQLERRM);
+        RETURN NULL;
+END FACTORIAL;
+/
+
+CREATE OR REPLACE FUNCTION FIBONACCI(N IN NUMBER)
+RETURN NUMBER
+IS
+BEGIN
+    IF N < 0 THEN
+        RETURN NULL;  -- For negative inputs (optional)
+    ELSIF N = 0 THEN
+        RETURN 0;
+    ELSIF N = 1 THEN
+        RETURN 1;
+    ELSE
+        RETURN FIBONACCI(N - 1) + FIBONACCI(N - 2);
+    END IF;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('An error occurred: ' || SQLERRM);
+        RETURN NULL;
+END FIBONACCI;
+
+CREATE OR REPLACE FUNCTION TABLE_N(N IN NUMBER);
+
+
+
+-- Test the function
+DECLARE
+    N NUMBER :=5;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Factorial of ' || N || ' is: ' || FACTORIAL(N));
+END;
+/
