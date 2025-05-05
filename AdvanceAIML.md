@@ -57,3 +57,37 @@ The **first problem of AI** is:
 That’s why AI was created — to solve problems using **intelligent behavior**, not just fixed instructions.
 
 ---
+AI TECHNIQUE
+
+
+> An **AI technique** is the **intermediate** (the middle part) that helps the **machine learn from data**.
+---
+
+## 🔄 How AI Works (in simple steps):
+
+1. ✅ **We have data**
+   👉 Examples: photos, texts, numbers, etc.
+
+2. ✅ **We have a machine**
+   👉 A computer or robot that wants to learn or solve a task.
+
+3. ⚙️ **We use an AI technique**
+   👉 This is the **“bridge” or method** between the data and the machine.
+
+---
+
+### 🧠 So yes, you are right:
+
+> An **AI technique** is the **intermediate** (the middle part) that helps the **machine learn from data**.
+
+---
+
+### 🔁 Example:
+
+* **Data**: 1000 pictures of cats 🐱
+* **Machine**: Your computer 🤖
+* **AI Technique**: Machine Learning 🧠
+  👉 The technique helps the machine learn to **recognize a cat** in new pictures.
+
+---
+
