@@ -167,5 +167,24 @@ Machines **try many solutions** and **evolve** the best one over time.
 
 ---
 
+AI PROBLEMS
+---
+
+### ❓**What are AI Problems?**
+
+AI problems are **tasks** that need **intelligent thinking** to solve — just like a human would.
+
+---
+
+### ✅ **Examples (real life):**
+
+* 🧠 **Learning**: A student learns from homework ➝ Machine learning from data.
+* 👁️ **Vision**: You see a cat and know it ➝ AI must recognize images.
+* 🗣️ **Speaking**: You talk to people ➝ AI learns to understand and speak (NLP).
+* 🚗 **Moving**: You drive a car ➝ AI drives in self-driving cars.
+* 🕹️ **Playing**: You play a game smartly ➝ AI plays chess or video games.
+
+---
+
 
 
