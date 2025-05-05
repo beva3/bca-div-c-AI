@@ -90,4 +90,82 @@ AI TECHNIQUE
   👉 The technique helps the machine learn to **recognize a cat** in new pictures.
 
 ---
+TYPE OF MACHINE TECH
+**ML (Machine Learning)** and **DL (Deep Learning)** are two of the **most popular AI techniques**, but there are more!
+
+---
+
+## ⚙️ **Main AI Techniques (Simple List)**
+
+### 1. **Machine Learning (ML)**
+
+The machine **learns from data** and improves with experience.
+📌 Example: Predicting student grades from past scores.
+
+---
+
+### 2. **Deep Learning (DL)**
+
+A **type of ML** that uses **artificial neural networks** (like a mini brain).
+📌 Example: Face recognition, voice assistants.
+
+---
+
+### 3. **Expert Systems**
+
+Rules made by **human experts** to help machines make decisions.
+📌 Example: A medical system that gives advice like a doctor.
+
+---
+
+### 4. **Natural Language Processing (NLP)**
+
+Helps machines **understand and speak** human language.
+📌 Example: ChatGPT, Google Translate.
+
+---
+
+### 5. **Computer Vision**
+
+Allows machines to **see and understand images or videos**.
+📌 Example: Detecting objects in photos.
+
+---
+
+### 6. **Robotics**
+
+Combines AI with physical **robots** that can move and act.
+📌 Example: A robot that walks or picks up objects.
+
+---
+
+### 7. **Fuzzy Logic**
+
+Helps machines make decisions in **uncertain situations** (not just true or false).
+📌 Example: Smart washing machines that choose wash cycles.
+
+---
+
+### 8. **Genetic Algorithms**
+
+Machines **try many solutions** and **evolve** the best one over time.
+📌 Inspired by natural evolution (like survival of the fittest).
+📌 Example: Optimizing traffic lights in a city.
+
+---
+
+### 🔁 Recap (with Emojis to help you remember):
+
+* 🧠 **ML** – Learn from data
+* 🕸️ **DL** – Brain-like learning (neural networks)
+* 👨‍⚕️ **Expert Systems** – Human rules
+* 💬 **NLP** – Understand language
+* 👁️ **Computer Vision** – Understand images
+* 🤖 **Robotics** – Intelligent machines
+* 🌫️ **Fuzzy Logic** – Think in gray areas
+* 🧬 **Genetic Algorithms** – Evolve solutions
+
+---
+
+
 
