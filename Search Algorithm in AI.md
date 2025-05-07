@@ -84,3 +84,31 @@ Uses a **heuristic function** to guide the search toward the goal more efficient
 
 ---
 
+## 🔍 A\* vs AO\* Search — Comparison Table
+
+| Feature                | A\* Search (A étoile)                     | AO\* Search (AO étoile)                                                 |
+| ---------------------- | ----------------------------------------- | ----------------------------------------------------------------------- |
+| ✅ **What is it?**      | Finds the best **path** in a **graph**    | Finds the best **solution tree** for problems with **choices**          |
+| 🔁 **Search type**     | Works on **graphs** (normal paths)        | Works on **AND-OR trees** (some steps need multiple parts to be solved) |
+| 📌 **Goal**            | Find **shortest path** from start to goal | Find the **optimal solution path** in logical problems (like planning)  |
+| 💡 **Used for**        | Maps, routes, puzzles (like 8-puzzle)     | Problem-solving in AI, planning, decision-making trees                  |
+| 📦 **Structure used**  | Uses `f(n) = g(n) + h(n)`                 | Also uses `f(n) = g(n) + h(n)` but for **AND/OR nodes**                 |
+| 📚 **Easy or Complex** | Easier to implement                       | More complex (uses logic and sub-solutions)                             |
+
+---
+
+## 🧠 Simple English Summary:
+
+* **A\***: Best for normal pathfinding (like Google Maps).
+* **AO\***: Best for solving **logic problems** with **many paths and decisions** (like planning steps in a smart robot).
+
+---
+
+## 🗣 French Translation (Résumé en français) :
+
+* **A\*** : Bon pour trouver le **meilleur chemin** sur une carte ou un graphe normal.
+* **AO\*** : Bon pour résoudre des **problèmes logiques complexes**, où il y a des **sous-problèmes** à résoudre en même temps.
+
+---
+
+
